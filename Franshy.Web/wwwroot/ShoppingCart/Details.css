@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.container {
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: auto; /* Center the container */
+}
+
+.product-details {
+    padding: 20px;
+    background-color: white; /* White background for details */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+    .product-details h2 {
+        font-size: 2rem; /* Larger font size for product name */
+        color: #333; /* Darker text for contrast */
+    }
+
+    .product-details h5 {
+        font-size: 1.2rem; /* Medium font size for description */
+        color: #6c757d; /* Grey color for description */
+        margin-top: 10px; /* Spacing above the description */
+    }
+
+.price-info {
+    margin-top: 10px; /* Spacing above the prices */
+    font-size: 1.25rem; /* Increase font size for prices */
+}
+
+.btn-dark {
+    background-color: #343a40; /* Dark background */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+    .btn-dark:hover {
+        background-color: #23272b; /* Darker shade on hover */
+        color: #fff; /* Keep text white on hover */
+    }
+
+.img-fluid {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.quantity-section {
+    margin-top: 20px; /* Space above the quantity input and button */
+}
+
+input[type="number"] {
+    width: 70px; /* Fixed width for quantity input */
+    padding: 10px; /* Padding for comfort */
+    border: 1px solid #495057; /* Dark border */
+    background-color: #e9ecef; /* Light grey background for contrast */
+    border-radius: 5px; /* Rounded corners */
+    color: #495057; /* Dark text color */
+}
+

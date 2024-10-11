@@ -1,0 +1,88 @@
+﻿@model OrderHeader
+<div class="order-confirmation">
+    <div class="header">
+        <h1>Order Confirmation</h1>
+    </div>
+
+    <div class="image-container">
+        <img src="~/img/a.webp" alt="Order Confirmation Image">
+    </div>
+
+    <div class="order-details">
+        <h2>Order Summary</h2>
+        <p><strong>Order Number:</strong> #@Model.Id</p>
+        <p><strong>Date:</strong> @Model.PaymentDate</p>
+        <p><strong>Total Amount:</strong> @Model.TotalPrice EGP</p>
+    </div>
+
+</div>
+
+
+<style>
+    .order-confirmation {
+        max-width: 600px;
+        margin: 20px auto; /* Center the container */
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+    }
+
+        .order-confirmation .header {
+            text-align: center; /* Center text */
+            margin-bottom: 20px;
+        }
+
+            .order-confirmation .header h1 {
+                font-size: 24px;
+                color: #333;
+            }
+
+            .order-confirmation .header p {
+                font-size: 16px;
+                color: #666;
+            }
+
+        .order-confirmation .order-details {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+
+            .order-confirmation .order-details h2 {
+                font-size: 20px;
+                color: #57b846; /* Green color for emphasis */
+                margin-bottom: 10px;
+            }
+
+            .order-confirmation .order-details p {
+                font-size: 14px;
+                color: #555;
+                line-height: 1.6;
+            }
+
+        .order-confirmation .footer {
+            text-align: center; /* Center text */
+            margin-top: 30px;
+        }
+
+            .order-confirmation .footer a {
+                color: #57b846;
+                text-decoration: none;
+            }
+
+                .order-confirmation .footer a:hover {
+                    text-decoration: underline;
+                }
+
+        .order-confirmation .image-container {
+            margin: 20px 0;
+        }
+
+            .order-confirmation .image-container img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+
+</style>

@@ -1,0 +1,86 @@
+﻿@model ShoppingCartVm
+
+<link href="~/ShoppingCart/style.css" rel="stylesheet" />
+<div class="cart_section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="cart_container">
+                    <div class="cart_title">Shopping Cart<small> (@Model.itemcount item in your cart) </small></div>
+                    <table class="table cart_list">
+                        <thead >
+                            <tr class="text-bold">
+                                <th class="cart_item_title">Image</th>
+                                <th class="cart_item_title">Name</th>
+                                <th class="cart_item_title">Quantity</th>
+                                <th class="cart_item_title">Price</th>
+                                <th class="cart_item_title">Total</th>
+                                <th class="cart_item_title">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.CartLists)
+                            {
+                                <tr class="cart_item clearfix">
+                                    <td class="cart_item_image" style="text-align: center;">
+                                        <img src="@item?.product.ImgUrl" alt="" style="max-width: 100px; max-height: 100px;">
+                                    </td>
+                                    <td class="cart_item_name">
+                                        <div class="cart_item_text">@item?.product.Name</div>
+                                    </td>
+                                    <td class="cart_item_quantity">
+                                        <div class="quantity-controls">
+                                            <form method="post" asp-action="Minus" asp-controller="Cart" class="quantity-form">
+                                                <input type="hidden" name="id" value="@item?.Id" />
+                                                <input type="hidden" name="count" value="@item?.count" />
+                                                <button type="submit" class="quantity-button quantity-decrease btn-grey"
+                                                @(item?.count <= 1 ? "disabled" : "")>
+                                                    -
+                                                </button>
+                                            </form>
+                                            <div class="cart_item_text quantity-display">@item?.count</div>
+                                            <form method="post" asp-action="Plus" asp-controller="Cart" class="quantity-form">
+                                                <input type="hidden" name="id" value="@item?.Id" />
+                                                <input type="hidden" name="count" value="@item?.count" />
+                                                <button type="submit" class="quantity-button quantity-increase btn-grey"
+                                                @(item?.count >= 10 ? "disabled" : "")>
+                                                    +
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                    <td class="cart_item_price">
+                                        <div class="cart_item_text">@item?.product.Price EGP</div>
+                                    </td>
+                                    <td class="cart_item_total">
+                                        <div class="cart_item_text">@(@item?.product.Price * @item?.count) EGP</div>
+                                    </td>
+                                    <td class="cart_item_remove">
+                                        <form method="post" asp-area="Customer" asp-action="Delete" asp-controller="Cart" class="remove-form">
+                                            <input type="hidden" name="id" value="@item?.Id" />
+                                            <button type="submit" class="btn btn-danger">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    <div class="order_total">
+                        <div class="order_total_content text-md-right">
+                            <div class="order_total_title">Order Total:</div>
+                            <div class="order_total_amount">@Model.TotalPrice EGP</div>
+                        </div>
+                    </div>
+
+                    <div class="cart_buttons">
+                        <button type="button" class="button cart_button_clear" onclick="window.location.href='@Url.Action("Index", "Home")'">Continue Shopping</button>
+                        <button type="button" class="button cart_button_checkout" onclick="window.location.href='@Url.Action("Summary", "Cart")'">Summary</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

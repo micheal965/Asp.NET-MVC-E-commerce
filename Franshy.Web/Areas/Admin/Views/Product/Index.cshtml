@@ -1,0 +1,30 @@
+﻿@model List<Product>
+@{
+    ViewBag.PageTitle = "Product Management";
+    ViewBag.Title = "View Product";
+}
+
+<div>
+    <a button asp-action="Create" asp-controller="Product" class="btn btn-success">Add Product</a>
+</div>
+
+<table id="products" class="table table-hover display" width="100%">
+    <thead class="text-bold">
+    <tr>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Price</td>
+        <td>Discount</td>
+        <td>Photo</td>
+        <td>Category</td>
+        <td>Actions</td>
+    </tr>
+    </thead>
+
+</table>
+
+ @section Scripts{
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+<script src="~/js/Products.js"></script>
+ }

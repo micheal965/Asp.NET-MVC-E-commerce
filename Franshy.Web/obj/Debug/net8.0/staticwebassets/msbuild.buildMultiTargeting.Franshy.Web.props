@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Franshy.Web.props" />
+</Project>

@@ -1,0 +1,83 @@
+﻿@model ProductVm
+@{
+    ViewBag.PageTitle = "Product Management";
+    ViewBag.Title = "Create Product";
+}
+
+<div class="container mt-4">
+    <form method="post" asp-action="Create" asp-controller="Product" enctype="multipart/form-data" class="shadow p-4 rounded bg-light">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label asp-for="product.Name" class="form-label"></label>
+                    <input type="text" asp-for="product.Name" class="form-control" placeholder="Enter product name" />
+                    <span asp-validation-for="product.Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="product.Description" class="form-label"></label>
+                    <textarea id="mytextarea" asp-for="product.Description" class="form-control" placeholder="Enter product description"></textarea>
+                    <span asp-validation-for="product.Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="product.ImgUrl" class="form-label"></label>
+                    <input type="file" name="file" id="imgfile" class="form-control" onchange="fillimg(event);" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="product.Price" class="form-label"></label>
+                    <input type="number" asp-for="product.Price" class="form-control" placeholder="Enter product price" />
+                    <span asp-validation-for="product.Price" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="product.InsteadOf" class="form-label"></label>
+                    <input type="number" asp-for="product.InsteadOf" class="form-control" placeholder="Enter alternative price" />
+                    <span asp-validation-for="product.InsteadOf" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="product.CategoryId" class="form-label"></label>
+                    <select asp-for="product.CategoryId" class="form-select">
+                        <option value="" disabled selected>Select Category</option>
+                        @foreach (var item in Model.categories)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    </select>
+                    <span asp-validation-for="product.CategoryId" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <input type="submit" value="Create" class="btn btn-success" />
+                    <a asp-action="Index" asp-controller="Product"
+                       class="btn btn-outline-primary"
+                       style="background-color: transparent; color: #0d6efd; border-color: #0d6efd;   transition: none;">Back To Products</a>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="container text-center">
+                    <img id="Imgpreview" width="400" height="400" class="img-fluid rounded border" alt="Image Preview" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="/path/or/uri/to/tinymce.min.js" referrerpolicy="origin"></script>
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        tinymce.init({
+            selector: '#mytextarea',
+            license_key: 'gpl|<your-license-key>'
+        });
+    </script>
+    <script>
+        var fillimg = function (event) {
+            var imgholder = document.getElementById("Imgpreview");
+            imgholder.src = URL.createObjectURL(event.target.files[0]);
+        }
+    </script>
+}

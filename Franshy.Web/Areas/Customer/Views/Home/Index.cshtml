@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Product>
+<link href="~/ShoppingCart/Home.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Include SweetAlert -->
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            @foreach (var item in Model)
+            {
+                <div class="col mb-5">
+                    <div class="card h-100 shadow-lg border-0">
+                        <!-- Product image-->
+                        <a href="" onclick="checklogin(event, '@item.Id')">
+                            <img class="card-img-top" src="@item.ImgUrl" alt="@item.Name" />
+                        </a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder text-dark">@item.Name</h5>
+                                <h6 class="text-muted fw-bold">@Html.Raw(item.Description)</h6>
+                                <!-- Product prices-->
+                                <div class="price-info mb-2 p-2" style="background-color: #f1f1f1; border-radius: 5px;">
+                                    @if (item.InsteadOf != 0)
+                                    {
+                                        <span class="text-danger text-decoration-line-through fw-bold">@item.InsteadOf.ToString("0") EGP</span>
+                                    }
+                                    <span class="fs-5 fw-bold text-dark ms-2">@item.Price.ToString("0") EGP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-dark" onclick="checklogin(event, '@item.Id')">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<script>
+    function checklogin(event, productId) {
+        event.preventDefault();
+
+        const isLoggedIn = @User.Identity.IsAuthenticated.ToString().ToLower();
+
+        if (!isLoggedIn) {
+            Swal.fire({
+                title: 'You need to log in!',
+                text: 'Please log in to add items to your cart.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Log In',
+                cancelButtonText: 'Cancel'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Redirect to the login page
+                    window.location.href = '@Url.Action("Login", "Account", new { area = "Identity" })';
+                }
+            });
+        } else {
+            // If logged in, redirect to the product details
+            window.location.href = '@Url.Action("Details", "Home")?id=' + productId;
+        }
+    }
+</script>

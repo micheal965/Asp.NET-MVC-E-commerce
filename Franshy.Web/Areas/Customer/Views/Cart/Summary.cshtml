@@ -1,0 +1,102 @@
+﻿@model SummaryCartVm
+@using Microsoft.Extensions.Options
+@inject IOptions<Franshy.Utilities.StripeData> Stripe
+<link href="~/ShoppingCart/Summary.css" rel="stylesheet" />
+
+<div class="wrapper">
+    <div class="h5 large">Billing Address</div>
+    <form method="post" asp-action="Summary" asp-controller="Cart">
+        <input hidden asp-for="@Model.orderHeader.ApplicationUserId" value="@Model.orderHeader.ApplicationUserId" />
+        <input hidden asp-for="@Model.orderHeader.TotalPrice" value="@Model.orderHeader.TotalPrice" />
+        <input hidden asp-for="shoppingcarts" value="@Model.shoppingcarts" />
+    <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-0 offset-md-2 offset-sm-1">
+            <div class="mobile h5">Billing Address</div>
+            <div id="details" class="bg-white rounded pb-5">
+
+                    <div class="form-group"> 
+                        <label class="text-muted">Name</label>
+                        <input type="text" asp-for="@Model.orderHeader.Name" value="@Model.orderHeader.Name" class="form-control">
+                    </div>
+                        <span asp-validation-for="@Model.orderHeader.Name" class="text-danger"></span>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>City</label>
+                                <div class="d-flex jusify-content-start align-items-center rounded p-2"> 
+                                    <input type="text" asp-for="@Model.orderHeader.City" value="" > 
+                                  </div>
+                                    <span asp-validation-for="@Model.orderHeader.City" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <div class="d-flex jusify-content-start align-items-center rounded p-2"> 
+                                    <input type="text" asp-for="@Model.orderHeader.Phone" value="">
+                                 </div>
+                                    <span asp-validation-for="@Model.orderHeader.Phone" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label>Address</label>
+                                <div class="d-flex jusify-content-start align-items-center rounded p-2">
+                                    <input type="text" asp-for="@Model.orderHeader.Address" value="@Model.orderHeader.Address">
+                                    </div>
+                                    <span asp-validation-for="@Model.orderHeader.Address" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-0 offset-md-2 offset-sm-1 pt-lg-0 pt-3">
+            <div id="cart" class="bg-white rounded">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="h6">Cart Summary</div>
+                </div>
+                @foreach (var item in Model.shoppingcarts)
+                {
+                    <div class="d-flex justify-content-between align-items-center pt-3 pb-2 border-bottom">
+                        <div class="item d-flex align-items-center">
+                            <img src="@item.product.ImgUrl" alt="" width="80" height="80" class="mr-2" style="margin-right: 10px;">
+                            <div class="number"><small>@item.count</small></div>
+
+                        </div>
+                        <div class="product-info flex-grow-1 text-left">
+                            <b class="h5 fw-bolder">@item.product.Name</b>
+                        </div>
+                        <div class="product-price text-right">
+                            <b class="h5 fw-bolder">@item.product.Price.ToString("0") EGP</b>
+                        </div>
+                    </div>
+                }
+            </div>
+
+
+            <div id="summary" class="bg-white rounded py-2 my-4">
+                <div class="border-top py-2 d-flex align-items-center ml-2 font-weight-bold">
+                    <div>Total:</div>
+                    <div class="px-2  fw-bolder">@Model.orderHeader.TotalPrice.ToString("0")</div>
+                    <div class="ml-auto text-primary">EGP</div>
+                </div>
+            </div>
+            <div class="row pt-lg-3 pt-2 buttons mb-sm-0 mb-2">
+                <div class="col-md-12 d-flex justify-content-start">
+                    <input type="button" class="btn btn-secondary me-4" onclick="window.location.href='@Url.Action("Index", "Cart")'" value="Back To Cart" />
+                        <input type="submit" class="btn btn-primary col-5" value="Checkout" />
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

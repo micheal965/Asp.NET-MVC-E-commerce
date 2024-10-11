@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #E0E0E0;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.button {
+    display: inline-block;
+    background: #0e8ce4;
+    border-radius: 5px;
+    height: 48px;
+    transition: all 200ms ease;
+}
+
+    .button a {
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 48px;
+        color: #FFFFFF;
+        padding: 0 35px;
+    }
+
+    .button:hover {
+        opacity: 0.8;
+    }
+
+.cart_section {
+    width: 100%;
+    padding: 93px 0 111px;
+}
+
+.cart_title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.cart_items {
+    margin-top: 8px;
+}
+
+.cart_list {
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart_item {
+    padding: 15px;
+    padding-right: 46px;
+}
+
+.cart_item_image {
+    width: 133px;
+    height: 133px;
+}
+
+    .cart_item_image img {
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+.cart_item_info {
+    padding-top: 18px;
+}
+
+.cart_item_name {
+    margin-left: 7.53%;
+}
+
+
+.cart_item_text {
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+.cart_item_price,
+.cart_item_total {
+    text-align: right;
+}
+
+.order_total {
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    padding-right: 46px;
+    padding-left: 15px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order_total_title {
+    display: inline-block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.order_total_amount {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 26px;
+    line-height: 60px;
+}
+
+.cart_buttons {
+    margin-top: 60px;
+    text-align: right;
+}
+
+.cart_button_clear,
+.cart_button_checkout {
+    display: inline-block;
+    border: none;
+    font-size: 18px;
+    line-height: 48px;
+    padding: 0 35px;
+    cursor: pointer;
+}
+
+.cart_button_clear {
+    color: rgba(0, 0, 0, 0.5);
+    background: #FFFFFF;
+    border: solid 1px #b2b2b2;
+    margin-right: 26px;
+}
+
+    .cart_button_clear:hover {
+        border-color: #0e8ce4;
+        color: #0e8ce4;
+    }
+
+.cart_button_checkout {
+    color: #FFFFFF;
+    background: #0e8ce4; /* Match button style */
+}
+
+.quantity-form {
+    display: inline-block;
+}
+
+.quantity-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .quantity-button:hover:not(.disabled) {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    .quantity-button.disabled {
+        background-color: #ccc; /* Grey for disabled state */
+        cursor: not-allowed;
+    }
+
+.quantity-display {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd; /* Light border around quantity */
+    border-radius: 4px;
+    margin: 0 10px; /* Space around the quantity display */
+}
+
+.remove-form .btn {
+    padding: 10px 15px; /* Adjust padding as needed */
+}
+
+    .remove-form .btn i {
+        font-size: 1.2rem; /* Adjust icon size */
+    }
+
+.btn-grey {
+    background-color: #6c757d; /* Bootstrap grey color */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Increased padding for a larger button */
+    font-size: 1rem; /* Adjust font size for better visibility */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+    .btn-grey:hover {
+        background-color: #000; /* Black on hover */
+    }
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures no gaps between cells */
+}
+
+    .table th, .table td {
+        padding: 15px; /* Equal padding for all cells */
+        text-align: left; /* Default alignment for text */
+    }
+
+    .table th {
+        background-color: #f8f8f8; /* Optional: header background color */
+    }

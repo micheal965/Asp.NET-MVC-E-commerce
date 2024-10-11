@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.PageTitle = "Category Management";
+    ViewBag.Title = "View Category";
+}
+
+<div>
+<a button asp-action ="Create" asp-controller="Category" class="btn btn-success">Create Category</a>
+</div>
+<table id="categories" class="table table-hover" width="100%">
+    <thead class="text-bold">
+    <tr>
+        <td>Name</td>
+        <td>Actions</td>
+    </tr>
+    </thead>
+
+</table>
+@section Scripts {
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+    <script src="~/js/Category.js"></script>
+}

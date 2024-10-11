@@ -1,0 +1,27 @@
+﻿@model List<Product>
+@{
+    ViewBag.PageTitle = "Order Management";
+    ViewBag.Title = "View Orders";
+}
+
+<table id="Orders" class="table table-hover display" width="100%">
+    <thead class="text-bold">
+        <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Phone</td>
+            <td>City</td>
+            <td>Email</td>
+            <td>OrderStatus</td>
+            <td>TotalPrice</td>
+            <td>Details</td>
+        </tr>
+    </thead>
+
+</table>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+    <script src="~/js/Order.js"></script>
+}

@@ -1,0 +1,20 @@
+﻿@model Category
+@{
+    ViewBag.PageTitle = "Category Management";
+    ViewBag.Title = "Edit Category";
+}
+<form method="post" asp-action="Edit" asp-controller="Category">
+    <div class="mb-3">
+        <label asp-for="@Model.Name"></label>
+        <input type="text" asp-for="@Model.Name" class="form-control" />
+        <span asp-validation-for="@Model.Name" class="text-danger"></span>
+    </div>
+
+    <input type="submit" value="Save" class="btn btn-success" />
+    <a asp-action="Index" asp-controller="Category"
+       class="btn btn-outline-primary"
+       style="background-color: transparent; color: #0d6efd; border-color: #0d6efd;   transition: none;">Back To Categories</a>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

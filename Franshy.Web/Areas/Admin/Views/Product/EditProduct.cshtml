@@ -1,0 +1,88 @@
+﻿@model ProductVm
+@{
+    ViewBag.PageTitle = "Product Management";
+    ViewBag.Title = "Edit Product";
+}
+<div class="row">
+<div class="col-md-4">
+<form method="post" asp-action="SaveEdit" asp-controller="Product" enctype="multipart/form-data">
+    <input type="text"hidden name="product.Id"  value="@Model.product.Id" />
+    <input type="hidden" name="product.ImgUrl" value="@Model.product.ImgUrl" />
+    <div class="mb-3">
+        <label asp-for="product.Name"></label>
+        <input type="text" asp-for="product.Name" class="form-control" />
+        <span asp-validation-for="product.Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="product.Description"></label>
+                <textarea id="mytextarea" asp-for="product.Description" class="form-control"></textarea>
+        <span asp-validation-for="product.Description" class="text-danger"></span>
+
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="product.Price"></label>
+        <input type="number" asp-for="product.Price" class="form-control" />
+        <span asp-validation-for="product.Price" class="text-danger"></span>
+
+    </div>    
+    
+    <div class="mb-3">
+        <label asp-for="product.InsteadOf"></label>
+                <input type="number" asp-for="product.InsteadOf" class="form-control" />
+                <span asp-validation-for="product.InsteadOf" class="text-danger"></span>
+
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="@Model.product.ImgUrl"></label>
+        <input type="file" name="file" class="form-control" />
+
+    </div>
+ 
+    
+    <div class="mb-3">
+        <label asp-for="product.Isavailable"></label>
+        <input type="text" asp-for="product.Isavailable" class="form-control" />
+        <span asp-validation-for="product.Isavailable" class="text-danger"></span>
+
+    </div>  
+    
+    <div class="mb-3">
+        <label asp-for="product.CategoryId"></label>
+        <select asp-for="product.CategoryId">
+            @foreach(var item in @Model.categories){
+                @if(Model.product.CategoryId==item.Id){
+                     <option value="@item.Id" selected>@item.Name</option>
+                }
+                else{
+                     <option value="@item.Id" >@item.Name</option>
+                }
+            }
+        </select>
+        <span asp-validation-for="product.CategoryId" class="text-danger"></span>
+    </div>
+
+    <input type="submit" value="Save" class="btn btn-success" />
+            <a asp-action="Index" asp-controller="Product"
+               class="btn btn-outline-primary"
+               style="background-color: transparent; color: #0d6efd; border-color: #0d6efd;   transition: none;">Back To Products</a>
+</form>
+</div>
+<div class="col-md-4">
+    <div class="container">
+        <img src="@Model.product.ImgUrl" width="300" height="300" />
+    </div>
+</div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        tinymce.init({
+            selector: '#mytextarea',
+            license_key: 'gpl|<your-license-key>'
+        });
+
+    </script>
+}

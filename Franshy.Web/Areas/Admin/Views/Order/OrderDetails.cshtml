@@ -1,0 +1,184 @@
+﻿@using Franshy.Utilities
+ @model OrderVm
+@{
+    ViewBag.PageTitle = "Order Management";
+    ViewBag.Title = "View Orders";
+}
+ <link rel="stylesheet" href="~/ShoppingCart/OrderDetails.css">
+
+    <div class="container mt-6">
+        <h2>Pickup Details</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <form asp-action="UpdateOrderDetails" asp-controller="Order" method="post">
+                    <input  hidden asp-for="orderheader.Id"/>
+                    <input  hidden asp-for="orderheader.OrderStatus"/>
+                    <input  hidden asp-for="orderheader.ApplicationUserId"/>
+                    <input  hidden asp-for="orderheader.TotalPrice"/>
+                    <div class="form-row">
+                        <label class="form-label" asp-for="orderheader.Name">Name</label>
+                        <input type="text" class="form-control" id="name" asp-for="orderheader.Name" value="@Model.orderheader.Name">
+                        <span asp-validation-for="@Model.orderheader.Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label" asp-for="orderheader.Phone">Phone</label>
+                        <input type="tel" class="form-control" id="phone" asp-for="orderheader.Phone" value="@Model.orderheader.Phone" >
+                    <span asp-validation-for="@Model.orderheader.Phone" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label" asp-for="@Model.orderheader.Address">Address</label>
+                        <input type="text" class="form-control" id="address" asp-for="orderheader.Address" value="@Model.orderheader.Address">
+                    <span asp-validation-for="@Model.orderheader.Address" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-row">
+                       <label class="form-label" asp-for="orderheader.City">City</label>
+                       <input type="text" class="form-control" id="city"  asp-for="orderheader.City"  value="@Model.orderheader.City" >
+                       <span asp-validation-for="@Model.orderheader.City" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-row">
+                           <label class="form-label" asp-for="orderheader.ApplicationUser.Email">Email</label>
+                           <input type="email" class="form-control" id="email" asp-for="orderheader.ApplicationUser.Email"  value="@Model.orderheader.ApplicationUser.Email" readonly>
+                    <span asp-validation-for="@Model.orderheader.ApplicationUser.Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label" asp-for="@Model.orderheader.OrderDate">Order Date</label>
+                        <input type="text" class="form-control" id="orderDate"  asp-for="orderheader.OrderDate"  value="@Model.orderheader.OrderDate" readonly>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label" asp-for="@Model.orderheader.TrackingNumber">Tracking Number</label>
+                    <input type="text" class="form-control" id="TrackingNumber" asp-for="orderheader.TrackingNumber" value="@Model.orderheader.TrackingNumber">
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label" asp-for="@Model.orderheader.ShippingDate">Shipping Date</label>
+                         <input type="text" class="form-control" id="shippingDate" asp-for="orderheader.ShippingDate" value="@Model.orderheader.ShippingDate" >
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label" asp-for="@Model.orderheader.SessionId">Session ID</label>
+                        <input type="text" class="form-control" id="sessionId "  asp-for="orderheader.SessionId" value="@Model.orderheader.SessionId" readonly>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label" asp-for="@Model.orderheader.PaymentIntentId">Payment Intent ID</label>
+                         <input type="text" class="form-control" id="paymentIntentId" asp-for="orderheader.PaymentIntentId" value="@Model.orderheader.PaymentIntentId" readonly>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label" asp-for="@Model.orderheader.PaymentDate">Payment Date</label>
+                       <input type="text" class="form-control" id="paymentDate" asp-for="orderheader.PaymentDate" value="@Model.orderheader.PaymentDate" readonly>
+                    </div>
+
+                    <div class="form-row">
+                          <label class="form-label" asp-for="orderheader.PaymentStatus">Payment Status</label>
+                         <input type="text" class="form-control" id="paymentStatus" asp-for="orderheader.PaymentStatus" value="@Model.orderheader.PaymentStatus"  readonly>
+                    </div>
+
+                <button type="submit" onclick="return CheckData()" class="btn btn-primary">Update</button>
+                <a asp-action="Index" asp-controller="Order"
+                   class="btn btn-outline-primary"
+                   style="background-color: transparent; color: #0d6efd; border-color: #0d6efd;   transition: none;">Back To Orders</a>
+            </form>
+            </div>
+
+        <div class="col-md-4">
+            <div class="card mt-50 mb-50">
+                <div class="text-center mb-3">
+                    <h5 class="font-weight-bold text-muted">Order Summary</h5>
+                    <hr class="bold-hr">
+                    <div class="title mx-auto text-dark fw-bolder text-center my-3 p-2 border rounded" style="background-color: #f8f9fa;">
+                        Order Status: <span class="text-primary">@Model.orderheader.OrderStatus</span>
+                    </div>
+                </div>
+                <div class="main">
+                    <span id="sub-title">
+                        <p><b>Payment Summary</b></p>
+                    </span>
+                    @foreach(var item in Model.orderdetails){
+                    <div class="row row-main">
+                        <div class="col-3"><img class="img-fluid" src="@item.Product.ImgUrl"></div>
+                        <div class="col-6">
+                            <div class="row d-flex">
+                                <p class="text-muted">Quantity:@item.Count</p>
+                            </div>     
+                            <div class="row d-flex">
+                                <p class="text-muted">Price:@item.Price EGP</p>
+                            </div>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <p><b>@(@item.Price*@item.Count) EGP</b></p>
+                        </div>
+                    </div>
+                    <hr />
+                       }
+                    <hr class="bold-hr">
+                    <div class="total bg-dark text-white p-3">
+                        <div class="row">
+                            <div class="col"><b>Total</b></div>
+                            <div class="col d-flex justify-content-end"><b>@Model.orderheader.TotalPrice.ToString("0") EGP</b></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px;">
+                <!-- Adjust the gap as needed -->
+                @if (Model.orderheader.OrderStatus == Roles.Approved)
+                {
+                    <form asp-controller="Order" asp-action="StartProcess" method="post">
+                        <input type="hidden" name="id" value="@Model.orderheader.Id" />
+                        <input type="submit" value="Start Process" class="btn btn-success" />
+                    </form>
+                }
+
+                @if (Model.orderheader.OrderStatus == Roles.Processing)
+                {
+                    <form asp-controller="Order" asp-action="StartShipping" method="post">
+                        <input type="hidden" asp-for="orderheader.Id" />
+                        <input type="hidden" asp-for="orderheader.TrackingNumber" required />
+                        <input type="submit" onclick="return CheckData()" value="Start Shipping" class="btn btn-primary" />
+                    </form>
+                }
+
+                @if (Model.orderheader.OrderStatus != Roles.Cancelled && Model.orderheader.OrderStatus != Roles.Shipped)
+                {
+                    <form asp-controller="Order" asp-action="CancelOrder" method="post">
+                        <input type="hidden" name="id" asp-for="@Model.orderheader.Id" />
+                        <input type="submit" value="Cancel Order" class="btn btn-danger" />
+                    </form>
+                }
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+@section Scripts{
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+    function CheckData() {
+    if(document.getElementById("TrackingNumber").value==''){
+            Swal.fire({
+                title: "There is an error",
+                text: "Please enter Tracking number",
+                icon: "error",
+                confirmButtonColor: "#3085d6",
+
+            });
+            return false;
+       }
+       return true;
+    }
+
+    </script>
+}

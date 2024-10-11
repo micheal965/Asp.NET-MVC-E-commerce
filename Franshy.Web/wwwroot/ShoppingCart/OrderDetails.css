@@ -1,0 +1,67 @@
+body {
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.container {
+    max-width: 1200px; /* Limit container width */
+}
+
+h2 {
+    margin-bottom: 30px; /* Space below the heading */
+    color: #333; /* Darker text for better readability */
+}
+
+.form-row {
+    align-items: center; /* Align label and input vertically */
+    margin-bottom: 15px; /* Space between rows */
+}
+
+.form-label {
+    width: 150px; /* Fixed width for labels */
+    margin-right: 10px; /* Space between label and input */
+    font-weight: 500; /* Slightly bolder label */
+}
+
+.card {
+    border: 1px solid #dee2e6; /* Border for the card */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.title {
+    text-align: center; /* Center title text */
+    font-size: 20px; /* Larger font for emphasis */
+    margin: 20px 0; /* Space around title */
+}
+
+.main {
+    margin-top: 15px; /* Space above the main section */
+}
+
+.row-main {
+    margin-bottom: 10px; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.img-fluid {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.total {
+    margin-top: 15px; /* Space above total */
+    font-size: 18px; /* Larger font for total */
+    font-weight: bold; /* Bold total text */
+}
+
+
+.text-muted {
+    color: #6c757d; /* Muted text color */
+}
+
+.bold-hr {
+    border: 2px solid #000; /* Bold black line */
+    margin: 20px 0; /* Adjust margins for spacing */
+}

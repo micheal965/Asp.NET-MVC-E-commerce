@@ -1,0 +1,13 @@
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\bin\Debug\net8.0\Franshy.Utilities.deps.json
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\bin\Debug\net8.0\Franshy.Utilities.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\bin\Debug\net8.0\Franshy.Utilities.pdb
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.AssemblyInfoInputs.cache
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.AssemblyInfo.cs
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.sourcelink.json
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\refint\Franshy.Utilities.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.pdb
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\ref\Franshy.Utilities.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.csproj.AssemblyReference.cache

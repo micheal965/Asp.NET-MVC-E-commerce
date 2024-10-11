@@ -1,0 +1,138 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Franshy.Utilities
+@inject IHttpContextAccessor httpcontextaccessor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Discover unique, handcrafted handbags at Franshy HandMade. Elevate your style with our elegant designs made from high-quality materials, perfect for any occasion.">
+    <meta name="author" content="" />
+    <title>Franshy</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="~/img/FranshyLogo.jpg" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/Customer/Css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container px-4 px-lg-5">
+
+            <a class="navbar-brand font-weight-bolder">Franshy HandMade</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link " aria-current="page" asp-area="Customer" asp-action="index" asp-controller="Home" >Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                    @if (User.IsInRole(Roles.AdminRole))
+                    {
+                        <li class="nav-item"><a class="nav-link " aria-current="page" asp-area="Admin" asp-action="Index" asp-controller="DashBoard">DashBoard</a></li>
+
+                    }
+                </ul>
+                <partial name="_LoginPartial" />
+
+                <form class="d-flex" asp-action="Index" asp-area="Customer" asp-controller="Cart">
+                    <button class="btn btn-outline-dark" type="button" onclick="checkLogin(event)">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        @await Component.InvokeAsync("ShoppingCart")
+                    </button>
+                </form>
+                
+            </div>
+        </div>
+
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Elevate Your Look with Elegant Handbags</h1>
+            </div>
+        </div>
+    </header>
+    <!-- Section-->
+    <div class="content">
+    @RenderBody();
+    </div>
+    <!-- Footer-->
+
+    <footer class="py-5 bg-dark" style="background: #000;color: #fff;" id="footer">
+        <!-- Footer Bottom Container -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 col-sm-12 copyright-w">
+                        <div class="copyright">
+                            Franshy HandMade © 2022 All Rights Reserved
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-12 payment-w">
+                        <ul class="socials">
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/franshy.handmade.bags" target="_blank">
+                                    <i class="fab fa-facebook"></i><span>Facebook</span>
+                                </a>
+                            </li>
+                            <li class="instagram">
+                                <a href="https://www.instagram.com/franshyhandmade/" target="_blank">
+                                    <i class="fab fa-instagram"></i><span>Instagram</span>
+                                </a>
+                            </li>
+                            <li class="whatsapp">
+                                <a href="https://wa.me/201220375349" target="_blank">
+                                    <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/Customer/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/additional-methods.min.js"></script>
+    @await RenderSectionAsync("Scripts",false)
+    <script>
+        function checkLogin(event) {
+            // Prevent the form from submitting
+            event.preventDefault();
+
+            const isLoggedIn = @User.Identity.IsAuthenticated.ToString().ToLower();
+
+            if (!isLoggedIn) {
+                Swal.fire({
+                    title: 'You need to log in!',
+                    text: 'Please log in to see your Cart',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Log In',
+                    cancelButtonText: 'Cancel'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Redirect to the login page within the Identity area
+                        window.location.href = '@Url.Action("Login", "Account", new { area = "Identity" })';
+                    }
+                });
+            } else {
+                // If logged in, redirect to the cart page
+                window.location.href = '@Url.Action("Index", "Cart", new { area = "Customer" })'; // Adjust as necessary
+            }
+        }
+    </script>
+
+
+</body>
+</html>

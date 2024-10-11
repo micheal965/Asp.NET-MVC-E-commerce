@@ -1,0 +1,33 @@
+﻿@model ShoppingCart
+<link href="~/ShoppingCart/Details.css" rel="stylesheet"/>
+<form method="post" asp-controller="Home" asp-action="AddtoCart">
+    <section class="py-5">
+        <input type="hidden" asp-for="@Model.productId" value="@Model.product.Id" />
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-6 mb-5">
+                    <img src="@Model.product.ImgUrl" class="img-fluid rounded shadow" alt="@Model.product.Name" />
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="product-details">
+                        <h2 class="fw-bolder text-dark">@Model.product.Name</h2>
+                        <h5 class="text-muted fw-bold">@Html.Raw(Model.product.Description)</h5> <!-- Made bold -->
+                        <div class="price-info mt-4">
+                            @if(Model.product.InsteadOf!=0){
+                            <span class="text-danger text-decoration-line-through fw-bold">@Model.product.InsteadOf.ToString("0") EGP</span>
+                            }
+                            <span class="fs-5 fw-bold text-dark ms-2">@Model.product.Price.ToString("0") EGP</span>
+                        </div>
+                        <div class="quantity-section d-flex align-items-center mt-4">
+                            <input class="form-control text-center me-3" id="inputQuantity" type="number" name="count" value="@Model.count" min="1" />
+                            <button class="btn btn-dark" type="submit">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+
