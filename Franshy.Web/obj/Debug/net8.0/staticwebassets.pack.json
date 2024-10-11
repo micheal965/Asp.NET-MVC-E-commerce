@@ -425,6 +425,10 @@
       "PackagePath": "staticwebassets\\Customer\\css\\styles.css"
     },
     {
+      "Id": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\Customer\\imgs\\checked.png",
+      "PackagePath": "staticwebassets\\Customer\\imgs\\checked.png"
+    },
+    {
       "Id": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\Customer\\js\\scripts.js",
       "PackagePath": "staticwebassets\\Customer\\js\\scripts.js"
     },

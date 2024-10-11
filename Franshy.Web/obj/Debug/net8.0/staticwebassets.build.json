@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lD/VaRVfjiisA1N6MdX+GosE4nb8y0ZhWD6OGLjkTCA=",
+  "Hash": "1PJWksWeJKgHQLrKyO/endC8r4jGtLm3UaVG4KYWl8M=",
   "Source": "Franshy.Web",
   "BasePath": "_content/Franshy.Web",
   "Mode": "Default",
@@ -1782,6 +1782,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Customer\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\Customer\\imgs\\checked.png",
+      "SourceId": "Franshy.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\",
+      "BasePath": "_content/Franshy.Web",
+      "RelativePath": "Customer/imgs/checked.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Customer\\imgs\\checked.png"
     },
     {
       "Identity": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\Customer\\js\\scripts.js",

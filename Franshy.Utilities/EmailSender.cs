@@ -14,30 +14,34 @@ namespace Franshy.Utilities
     public class EmailSender : IEmailSender
     {
         private readonly SmtpClient _smtpClient;
-        private readonly IOptions<EmailSettings> emailsettings;
+        private readonly EmailSettings _emailsettings;
 
         public EmailSender(IOptions<EmailSettings> emailsettings)
         {
+            _emailsettings = emailsettings.Value;
             _smtpClient = new SmtpClient()
             {
-                Host = emailsettings.Value.SmtpServer,
-                Port = emailsettings.Value.SmtpPort,
-                Credentials = new NetworkCredential(emailsettings.Value.Username, emailsettings.Value.Password),
-                EnableSsl = true
+                Host = _emailsettings.SmtpServer,
+                Port = _emailsettings.SmtpPort,
+                Credentials = new NetworkCredential(_emailsettings.Username,_emailsettings.Password),
+                EnableSsl = true,
             };
         }
         public async Task SendEmailAsync(string email, string subject, string message)
         {
-            var mailmessage = new MailMessage
+            using (var mailMessage = new MailMessage())
             {
-                From = new MailAddress(emailsettings.Value.Username),
-                Subject = subject,
-                Body = message,
-                IsBodyHtml = true,
-            };
-            mailmessage.To.Add(email);
-            await _smtpClient.SendMailAsync(mailmessage);
+                mailMessage.From = new MailAddress(_emailsettings.Username);
+                mailMessage.To.Add(email);
+                mailMessage.Subject = subject;
+                mailMessage.Body = message;
+                mailMessage.IsBodyHtml = true;
+                // Ensure _smtpClient is properly configured
+                await _smtpClient.SendMailAsync(mailMessage);
+
+            }
         }
+
 
     }
 }

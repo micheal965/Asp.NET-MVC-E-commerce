@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Franshy.Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f216e6756ec14504e617c1f05bd9f0b70a6d5d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15e553a9cb09b10225cb73fab1f82972ff9b3180")]
 [assembly: System.Reflection.AssemblyProductAttribute("Franshy.Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Franshy.Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

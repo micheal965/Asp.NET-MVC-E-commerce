@@ -9,6 +9,8 @@ using Franshy.Entities.Models;
 using Stripe;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 namespace Franshy.Web
 {
@@ -26,6 +28,7 @@ namespace Franshy.Web
                 option.UseSqlServer(builder.Configuration.GetConnectionString("Constr"));
             });
             builder.Services.Configure<StripeData>(builder.Configuration.GetSection("stripe"));
+            builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequireUppercase = true;
@@ -70,6 +73,7 @@ namespace Franshy.Web
 
                 options.ConsumerKey = twitterauthsection["ApiKey"];
                 options.ConsumerSecret = twitterauthsection["ApiSecret"];
+                options.ClaimActions.MapJsonKey(ClaimTypes.Email, "email");
             });
             builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
             builder.Services.AddTransient<IEmailSender, EmailSender>();

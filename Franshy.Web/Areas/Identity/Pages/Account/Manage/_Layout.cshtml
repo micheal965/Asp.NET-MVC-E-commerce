@@ -1,5 +1,5 @@
 ﻿@{
-    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout !=  null)
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout != null)
     {
         Layout = parentLayout.ToString();
     }
@@ -8,11 +8,7 @@
         Layout = "/Areas/Identity/Pages/_Layout.cshtml";
     }
 }
-
-<h1>Manage your account</h1>
-
 <div>
-    <h2>Change your account settings</h2>
     <hr />
     <div class="row">
         <div class="col-md-3">
@@ -27,3 +23,9 @@
 @section Scripts {
     @RenderSection("Scripts", required: false)
 }
+<style>
+    .header-container {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+</style>

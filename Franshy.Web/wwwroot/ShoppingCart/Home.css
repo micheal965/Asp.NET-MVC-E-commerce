@@ -1,68 +1,68 @@
 
-body {
+/* Targeting only the product section */
+.product-section {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Light background for contrast */
+    background-color: #f8f9fa;
+    Light background for contrast
 }
 
-.container {
-    max-width: 1200px; /* Limit the width for better readability */
-    margin: auto; /* Center the container */
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Spacing between cards */
-}
-
-.card {
-    border-radius: 10px; /* Rounded corners */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth scaling on hover */
-    background-color: white; /* White background for cards */
-}
-
-    .card:hover {
-        transform: translateY(-5px); /* Lift effect on hover */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    .product-section .card {
+        border-radius: 10px;
+        Rounded corners transition: transform 0.2s, box-shadow 0.2s;
+        Smooth scaling on hover background-color: white;
+        White background for cards
     }
 
-.card-img-top {
-    border-top-left-radius: 10px; /* Match card border radius */
-    border-top-right-radius: 10px; /* Match card border radius */
-    height: 250px; /* Fixed height for images */
-    object-fit: cover; /* Cover to maintain aspect ratio */
-}
+        .product-section .card:hover {
+            transform: translateY(-5px);
+            Lift effect on hover box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            Deeper shadow on hover
+        }
 
-.text-center h5 {
-    font-size: 1.5rem; /* Larger font size for product name */
-    color: #333; /* Darker text for contrast */
-}
-
-.text-center h6 {
-    font-size: 1.1rem; /* Adjusted size for description */
-    color: #6c757d; /* Grey color for description */
-    margin-top: 5px; /* Spacing above the description */
-}
-
-.price-info {
-    margin-top: 10px; /* Spacing above the prices */
-    background-color: #f1f1f1; /* Light gray background for prices */
-    border-radius: 5px; /* Rounded corners */
-}
-
-.text-danger {
-    color: #dc3545; /* Bootstrap danger color for strikethrough */
-}
-
-.btn-dark {
-    background-color: #343a40; /* Dark background */
-    color: white; /* White text */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 20px; /* Padding for buttons */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-    .btn-dark:hover {
-        background-color: #23272b; /* Darker shade on hover */
-        color: #fff; /* Keep text white on hover */
+    .product-section .card-img-top {
+        border-top-left-radius: 10px;
+        Match card border radius border-top-right-radius: 10px;
+        Match card border radius height: 300px;
+        Fixed height for images object-fit: cover;
+        Cover to maintain aspect ratio
     }
+
+    .product-section .text-center h5 {
+        font-size: 1.5rem;
+        Larger font size for product name color: #333;
+        Darker text for contrast
+    }
+
+    .product-section .text-center h6 {
+        font-size: 1.1rem;
+        Adjusted size for description color: #6c757d;
+        Grey color for description margin-top: 5px;
+        Spacing above the description
+    }
+
+    .product-section .price-info {
+        margin-top: 10px;
+        Spacing above the prices background-color: #f1f1f1;
+        Light gray background for prices border-radius: 5px;
+        Rounded corners
+    }
+
+    .product-section .text-danger {
+        color: #dc3545;
+        Bootstrap danger color for strikethrough
+    }
+
+    .product-section .btn-dark {
+        background-color: #343a40;
+        Dark background color: white;
+        White text border-radius: 5px;
+        Rounded corners padding: 10px 20px;
+        Padding for buttons transition: background-color 0.3s;
+        Smooth transition
+    }
+
+        .product-section .btn-dark:hover {
+            background-color: #23272b;
+            Darker shade on hover color: #fff;
+            Keep text white on hover
+        }

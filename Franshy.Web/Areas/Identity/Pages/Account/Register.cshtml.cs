@@ -146,27 +146,8 @@ namespace Franshy.Web.Areas.Identity.Pages.Account
                     else
                     {
                         await _userManager.AddToRoleAsync(user, Roles.CustomerRole);
+                        await _signInManager.SignInAsync(user, isPersistent: false);
                     }
-
-                    // Check if email confirmation is required
-                    if (_userManager.Options.SignIn.RequireConfirmedAccount)
-                    {
-                        var userId = await _userManager.GetUserIdAsync(user);
-                        var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                        var callbackUrl = Url.Page(
-                            "/Account/ConfirmEmail",
-                            pageHandler: null,
-                            values: new { userId = userId, code = code, returnUrl = returnUrl },
-                            protocol: Request.Scheme);
-
-                        await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                            $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl });
-                    }
-
-                    // Sign in the user if email confirmation is not required
-                    await _signInManager.SignInAsync(user, isPersistent: false);
                     return LocalRedirect(returnUrl);
                 }
 

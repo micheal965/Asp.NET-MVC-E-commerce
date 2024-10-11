@@ -51,6 +51,10 @@ namespace Franshy.Web.Areas.Identity.Pages.Account.Manage
         /// </summary>
         public class InputModel
         {
+            [Required(ErrorMessage = "Name is Required")]
+            public string Name { get; set; }
+            [Required(ErrorMessage = "Address is Required")]
+            public string Address { get; set; }
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -69,7 +73,10 @@ namespace Franshy.Web.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                PhoneNumber = user.PhoneNumber,
+                Name = user.Name,
+                Address = user.Address,
+
             };
         }
 
@@ -100,9 +107,12 @@ namespace Franshy.Web.Areas.Identity.Pages.Account.Manage
             }
 
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-            if (Input.PhoneNumber != phoneNumber)
+            if (ModelState.IsValid)
             {
+                user.Name = Input.Name;
+                user.Address = Input.Address;
                 var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
+                
                 if (!setPhoneResult.Succeeded)
                 {
                     StatusMessage = "Unexpected error when trying to set phone number.";

@@ -3,99 +3,110 @@
 @model RegisterModel
 
 <h1>@ViewData["Title"]</h1>
-<section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
-     <div class="row">
-    <div class="col-md-5">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Create a new account.</h2>
-            <hr />
-            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+                <div class="card text-black" style="border-radius: 25px;">
+                    <div class="card-body p-md-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                <h2 class="text-center text-dark h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</h2>
 
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Name" class="form-control" autocomplete="Name" aria-required="true" placeholder="Name" />
-                <label asp-for="Input.Name">Name</label>
-                <span asp-validation-for="Input.Name" class="text-danger"></span>
-            </div>
+                                <form id="registerForm" class="mx-1 mx-md-4" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
 
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Address" class="form-control" autocomplete="Address" aria-required="true" placeholder="Address" />
-                <label asp-for="Input.Address">Address</label>
-                <span asp-validation-for="Input.Address" class="text-danger"></span>
-            </div>
+                                    <div class="mb-4">
+                                        <!-- Adjusted spacing -->
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                            <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                                <input asp-for="Input.Name" class="form-control" autocomplete="Name" aria-required="true" placeholder="Name" />
+                                                <span asp-validation-for="Input.Name" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
 
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                <label asp-for="Input.Email">Email</label>
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.Password">Password</label>
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-@if(User.IsInRole(role:@Roles.AdminRole)) {
-    <div>
-        <input type="radio" name="RatioRole" value="@Roles.AdminRole" required /> @Roles.AdminRole
-        <input type="radio" name="RatioRole" value="@Roles.CustomerRole" required /> @Roles.CustomerRole
-    </div>
-    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Create</button>
-} else {
-    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
-}
+                                    <div class="mb-4">
+                                        <!-- Adjusted spacing -->
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fas fa-map-marker-alt fa-lg me-3 fa-fw"></i>
+                                            <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                                <input asp-for="Input.Address" class="form-control" autocomplete="Address" aria-required="true" placeholder="Address" />
+                                                <span asp-validation-for="Input.Address" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
 
-        </form>
+                                    <div class="mb-4">
+                                        <!-- Adjusted spacing -->
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                            <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
 
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to register.</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
+                                    <div class="mb-4">
+                                        <!-- Adjusted spacing -->
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                            <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Password" />
+                                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <!-- Adjusted spacing -->
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fas fa-check-circle fa-lg me-3 fa-fw"></i> <!-- Checkmark icon -->
+                                            <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirm password" />
+                                                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @if (User.IsInRole(role: @Roles.AdminRole))
+                                    {
+                                        <div class="mb-4">
+                                            <!-- Adjusted spacing -->
+                                            <input type="radio" name="RatioRole" value="@Roles.AdminRole" required /> @Roles.AdminRole
+                                            <input type="radio" name="RatioRole" value="@Roles.CustomerRole" required /> @Roles.CustomerRole
+                                        </div>
+                                        <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary mt-4" >Create</button>
+                                    }
+                                    else
+                                    {
+                                        <button type="submit" class="w-100 btn btn-lg btn-primary mt-4">Register</button>
+                                    }
+                                </form>
+                            </div>
+                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                <img src="~/img/FranshyLogo2.jpg" class="img-fluid" alt="Sample image">
+                            </div>
                         </div>
-                    </form>
-                }
-            }
-        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 </section>
+
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Ensure SweetAlert is included -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        document.getElementById('registerSubmit').addEventListener('click', function(event) {
+        document.getElementById('registerSubmit').addEventListener('click', function (event) {
             const radios = document.getElementsByName('RatioRole');
             const isChecked = Array.from(radios).some(radio => radio.checked);
-            
+
             if (!isChecked) {
                 event.preventDefault(); // Prevent form submission
-                
                 // Show SweetAlert
                 Swal.fire({
                     title: "Please select a role",
