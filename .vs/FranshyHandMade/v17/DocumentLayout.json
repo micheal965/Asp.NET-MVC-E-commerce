@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\customer\\views\\cart\\summary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\customer\\views\\cart\\summary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,21 +25,47 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Summary.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T10:59:30.759Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Program.cs",
-              "RelativeDocumentMoniker": "Franshy.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Program.cs",
-              "RelativeToolTip": "Franshy.Web\\Program.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAQwEwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T10:13:56.672Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T10:59:22.587Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T10:56:14.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }

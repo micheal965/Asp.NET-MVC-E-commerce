@@ -26,7 +26,9 @@
                                 <div class="price-info mb-2 p-2" style="background-color: #f1f1f1; border-radius: 5px;">
                                     @if (item.InsteadOf != 0)
                                     {
-                                        <span class="text-danger text-decoration-line-through fw-bold">@item.InsteadOf.ToString("0") EGP</span>
+                                        <span class="text-danger text-decoration-line-through " style="text-decoration-color: red;">
+                                            @item.InsteadOf.ToString("0") EGP
+                                        </span>
                                     }
                                     <span class="fs-5 fw-bold text-dark ms-2">@item.Price.ToString("0") EGP</span>
                                 </div>
@@ -40,21 +42,22 @@
                         </div>
                     </div>
                 </div>
-            }
+            }      
         </div>
 
     </div>
-</section>
-<div class="container px-4 px-lg-5 mt-5">
-    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-        @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page = page }), new PagedListRenderOptions
-   {
-       LiElementClasses = new string[] { "page-item" },
-       PageClasses = new string[] { "page-link" }
-   })
+            @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page = page }), new PagedListRenderOptions
+       {
+           LiElementClasses = new string[] { "page-item" },
+           PageClasses = new string[] { "page-link" }
+       })
+        </div>
     </div>
-</div>
+</section>
+
 <script>
     function checklogin(event, productId) {
         event.preventDefault();

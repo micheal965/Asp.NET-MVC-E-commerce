@@ -324,3 +324,5 @@ C:\Users\MICHEAL\Downloads\FranshyHandMade-master\FranshyHandMade-master\Franshy
 C:\Users\MICHEAL\Downloads\FranshyHandMade-master\FranshyHandMade-master\Franshy.Entities\obj\Debug\net8.0\refint\Franshy.Entities.dll
 C:\Users\MICHEAL\Downloads\FranshyHandMade-master\FranshyHandMade-master\Franshy.Entities\obj\Debug\net8.0\Franshy.Entities.pdb
 C:\Users\MICHEAL\Downloads\FranshyHandMade-master\FranshyHandMade-master\Franshy.Entities\obj\Debug\net8.0\ref\Franshy.Entities.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Entities\bin\Debug\net8.0\Franshy.Entities.runtimeconfig.json
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Entities\obj\Debug\net8.0\Franshy.Entities.genruntimeconfig.cache

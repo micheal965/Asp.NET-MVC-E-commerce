@@ -113,7 +113,6 @@ C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.AspNetCore.WebUtilities.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.CSharp.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll
@@ -125,8 +124,6 @@ C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.Xml.dll
-C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.Abstractions.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
@@ -144,11 +141,9 @@ C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Localization.dll
-C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Configuration.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Console.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Debug.dll
-C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.EventLog.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.EventSource.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.TraceSource.dll
@@ -1182,3 +1177,9 @@ C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\X.Pag
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Facebook.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Twitter.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll

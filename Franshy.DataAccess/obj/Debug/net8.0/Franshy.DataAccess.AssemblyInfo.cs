@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Franshy.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbde179f87f75d1cdf239bbb687daff74742d4ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66b45057e3ab87108b5f6d999c28347c6f8fd5cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Franshy.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Franshy.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

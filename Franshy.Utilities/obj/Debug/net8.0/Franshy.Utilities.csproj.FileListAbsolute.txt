@@ -11,3 +11,5 @@ C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.pdb
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\ref\Franshy.Utilities.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.csproj.AssemblyReference.cache
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\bin\Debug\net8.0\Franshy.Utilities.runtimeconfig.json
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.Utilities\obj\Debug\net8.0\Franshy.Utilities.genruntimeconfig.cache

@@ -334,3 +334,5 @@ C:\Users\MICHEAL\Downloads\FranshyHandMade-master\FranshyHandMade-master\Franshy
 C:\Users\MICHEAL\Downloads\FranshyHandMade-master\FranshyHandMade-master\Franshy.DataAccess\obj\Debug\net8.0\ref\Franshy.DataAccess.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.DataAccess\bin\Debug\net8.0\Franshy.Utilities.dll
 C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.DataAccess\bin\Debug\net8.0\Franshy.Utilities.pdb
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.DataAccess\bin\Debug\net8.0\Franshy.DataAccess.runtimeconfig.json
+C:\Users\MICHEAL\source\repos\FranshyHandMade\Franshy.DataAccess\obj\Debug\net8.0\Franshy.DataAccess.genruntimeconfig.cache

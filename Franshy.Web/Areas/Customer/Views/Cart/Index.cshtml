@@ -1,6 +1,7 @@
 ﻿@model ShoppingCartVm
 
 <link href="~/ShoppingCart/style.css" rel="stylesheet" />
+<div class="row2">
 <div class="cart_section">
     <div class="container-fluid">
         <div class="row">
@@ -30,6 +31,7 @@
                                     </td>
                                     <td class="cart_item_quantity">
                                         <div class="quantity-controls">
+                                          <div class="cart_item_text">
                                             <form method="post" asp-action="Minus" asp-controller="Cart" class="quantity-form">
                                                 <input type="hidden" name="id" value="@item?.Id" />
                                                 <input type="hidden" name="count" value="@item?.count" />
@@ -47,6 +49,7 @@
                                                     +
                                                 </button>
                                             </form>
+                                            </div>
                                         </div>
                                     </td>
                                     <td class="cart_item_price">
@@ -56,12 +59,14 @@
                                         <div class="cart_item_text">@(@item?.product.Price * @item?.count) EGP</div>
                                     </td>
                                     <td class="cart_item_remove">
+                                         <div class="cart_item_text">
                                         <form method="post" asp-area="Customer" asp-action="Delete" asp-controller="Cart" class="remove-form">
                                             <input type="hidden" name="id" value="@item?.Id" />
                                             <button type="submit" class="btn btn-danger">
                                                 <i class="fas fa-trash-alt"></i>
                                             </button>
                                         </form>
+                                        </div>
                                     </td>
                                 </tr>
                             }
@@ -84,3 +89,9 @@
         </div>
     </div>
 </div>
+    </div>
+<style>
+    .row2{
+        margin-bottom:200px;
+    }
+</style>
