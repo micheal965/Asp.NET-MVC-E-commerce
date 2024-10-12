@@ -1,19 +1,427 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\wwwroot\\shoppingcart\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\wwwroot\\shoppingcart\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\wwwroot\\css\\alt\\adminlte.core.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\wwwroot\\css\\alt\\adminlte.core.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\wwwroot\\customer\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\wwwroot\\customer\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\views\\shared\\_customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\views\\shared\\_customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C72B5A-E2E5-4E35-B42C-F912F09DEC22}|Franshy.Utilities\\Franshy.Utilities.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.utilities\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C72B5A-E2E5-4E35-B42C-F912F09DEC22}|Franshy.Utilities\\Franshy.Utilities.csproj|solutionrelative:franshy.utilities\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6507B459-684D-41E4-A372-1FD1F7BAEB6C}|Franshy.DataAccess\\Franshy.DataAccess.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.dataaccess\\dbinitializer\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6507B459-684D-41E4-A372-1FD1F7BAEB6C}|Franshy.DataAccess\\Franshy.DataAccess.csproj|solutionrelative:franshy.dataaccess\\dbinitializer\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6507B459-684D-41E4-A372-1FD1F7BAEB6C}|Franshy.DataAccess\\Franshy.DataAccess.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.dataaccess\\dbinitializer\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6507B459-684D-41E4-A372-1FD1F7BAEB6C}|Franshy.DataAccess\\Franshy.DataAccess.csproj|solutionrelative:franshy.dataaccess\\dbinitializer\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|c:\\users\\micheal\\source\\repos\\franshyhandmade\\franshy.web\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A449EA2A-B084-4A90-9FB4-6A68F1DB4B9B}|Franshy.Web\\Franshy.Web.csproj|solutionrelative:franshy.web\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 514,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 734,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.css",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\ShoppingCart\\Home.css",
+              "RelativeDocumentMoniker": "Franshy.Web\\wwwroot\\ShoppingCart\\Home.css",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\ShoppingCart\\Home.css",
+              "RelativeToolTip": "Franshy.Web\\wwwroot\\ShoppingCart\\Home.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-12T05:06:36.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "adminlte.core.css",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\css\\alt\\adminlte.core.css",
+              "RelativeDocumentMoniker": "Franshy.Web\\wwwroot\\css\\alt\\adminlte.core.css",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\css\\alt\\adminlte.core.css",
+              "RelativeToolTip": "Franshy.Web\\wwwroot\\css\\alt\\adminlte.core.css",
+              "ViewState": "AgIAAKoxAAAAAAAAAAAjwLYxAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-12T05:02:54.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\Customer\\css\\styles.css",
+              "RelativeDocumentMoniker": "Franshy.Web\\wwwroot\\Customer\\css\\styles.css",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\wwwroot\\Customer\\css\\styles.css",
+              "RelativeToolTip": "Franshy.Web\\wwwroot\\Customer\\css\\styles.css",
+              "ViewState": "AgIAAL0QAAAAAAAAAAAjwMkQAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-12T05:02:28.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Customer.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Views\\Shared\\_Customer.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Views\\Shared\\_Customer.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Views\\Shared\\_Customer.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Views\\Shared\\_Customer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T05:00:57.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.DataAccess\\DbInitializer\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Franshy.DataAccess\\DbInitializer\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.DataAccess\\DbInitializer\\DbInitializer.cs",
+              "RelativeToolTip": "Franshy.DataAccess\\DbInitializer\\DbInitializer.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T03:00:19.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Franshy.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\appsettings.json",
+              "RelativeToolTip": "Franshy.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-12T02:56:58.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "Franshy.Web\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "Franshy.Web\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-12T02:41:39.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Franshy.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Program.cs",
+              "RelativeToolTip": "Franshy.Web\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAowDAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T02:38:29.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T01:11:13.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T23:04:13.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T23:04:16.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IDbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.DataAccess\\DbInitializer\\IDbInitializer.cs",
+              "RelativeDocumentMoniker": "Franshy.DataAccess\\DbInitializer\\IDbInitializer.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.DataAccess\\DbInitializer\\IDbInitializer.cs",
+              "RelativeToolTip": "Franshy.DataAccess\\DbInitializer\\IDbInitializer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T02:59:30.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAA/wJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T00:53:32.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Utilities\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "Franshy.Utilities\\EmailSettings.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Utilities\\EmailSettings.cs",
+              "RelativeToolTip": "Franshy.Utilities\\EmailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T00:11:09.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAmwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T03:01:15.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAUwHMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T00:53:32.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RegisterConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T01:22:51.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ExternalLogins.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T01:21:46.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ExternalLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwB0AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T01:23:10.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ForgotPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwEgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T00:52:22.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ResetPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T00:51:11.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_StatusMessage.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T23:58:54.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T23:46:28.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\MICHEAL\\source\\repos\\FranshyHandMade\\Franshy.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Franshy.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T23:46:09.989Z",
+              "EditorCaption": ""
             }
           ]
         }

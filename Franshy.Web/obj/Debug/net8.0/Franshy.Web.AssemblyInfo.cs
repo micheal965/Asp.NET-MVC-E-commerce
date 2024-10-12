@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Franshy.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15e553a9cb09b10225cb73fab1f82972ff9b3180")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+169f78ce2ed791fb8e89f4c792549af7f10b59cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Franshy.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Franshy.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,13 +4,9 @@ using Franshy.DataAccess.Repository.Implementation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Franshy.Utilities;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Franshy.Entities.Models;
 using Stripe;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Google;
-using Microsoft.AspNetCore.Authentication;
-using System.Security.Claims;
+using Franshy.DataAccess.DbInitializer;
 
 namespace Franshy.Web
 {
@@ -50,9 +46,10 @@ namespace Franshy.Web
             builder.Services.AddScoped<IOrderHeaderRepository, OrderHeaderRepository>();
             builder.Services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
 
+            builder.Services.AddScoped<IDbInitializer, DbInitializer>();
+
             builder.Services.AddDistributedMemoryCache();
             builder.Services.AddSession();
-            builder.Services.AddSingleton<IEmailSender, EmailSender>();
             builder.Services.AddAuthentication()
                 .AddGoogle(options =>
                 {
@@ -66,17 +63,7 @@ namespace Franshy.Web
                 IConfigurationSection facebookauthsection = builder.Configuration.GetSection("Authentication:Facebook");
                 options.AppId = facebookauthsection["AppId"];
                 options.AppSecret = facebookauthsection["AppSecret"];
-            })
-            .AddTwitter(options =>
-            {
-                IConfigurationSection twitterauthsection = builder.Configuration.GetSection("Authentication:Twitter");
-
-                options.ConsumerKey = twitterauthsection["ApiKey"];
-                options.ConsumerSecret = twitterauthsection["ApiSecret"];
-                options.ClaimActions.MapJsonKey(ClaimTypes.Email, "email");
             });
-            builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
-            builder.Services.AddTransient<IEmailSender, EmailSender>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -92,6 +79,13 @@ namespace Franshy.Web
 
             app.UseRouting();
             StripeConfiguration.ApiKey = builder.Configuration.GetSection("stripe:Secretkey").Get<string>();
+
+            ////initialize Db
+            using (var scope = app.Services.CreateScope())
+            {
+                var dbinitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+                dbinitializer.Initialize();
+            }
             app.UseAuthentication();
             app.UseAuthorization();
 

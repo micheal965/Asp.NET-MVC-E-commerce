@@ -3,7 +3,8 @@
 .product-section {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
-    Light background for contrast
+    Light background for contrast;
+    margin-bottom: 221px;
 }
 
     .product-section .card {

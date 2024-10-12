@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Franshy.Utilities;
+using System.Linq;
+using X.PagedList;
 
 namespace Franshy.Web.Areas.Customer.Controllers
 {
@@ -16,12 +18,12 @@ namespace Franshy.Web.Areas.Customer.Controllers
         {
             UnitOfWork = unitOfWork;
         }
-        public async Task<IActionResult> Index(int? page)
+        public async Task<IActionResult> Index(int page = 1)
         {
-            var pageNumber = page ?? 1;
             int pagesize = 8;
             IEnumerable<Product> Products = await UnitOfWork.Product.GetAllAsync();
-            return View("index", Products);
+            var pagedProducts = Products.ToPagedList(page, pagesize);
+            return View("index", pagedProducts);
         }
 
         public async Task<IActionResult> Details(int id)

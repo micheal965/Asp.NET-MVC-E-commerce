@@ -1,131 +1,91 @@
 ﻿@page
 @model LoginModel
 
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+                <div class="card text-black" style="border-radius: 25px;">
+                    <div class="card-body p-md-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                <h2 class="text-center text-dark h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Log in</h2>
 
-	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-	<!--===============================================================================================-->
-@* 	<link rel="stylesheet" type="text/css" href="~/Customer/Login/vendor/bootstrap/css/bootstrap.min.css"> *@
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="~/Customer/Login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="~/Customer/Login/vendor/animate/animate.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="~/Customer/Login/vendor/css-hamburgers/hamburgers.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="~/Customer/Login/vendor/select2/select2.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="~/Customer/Login/css/util.css">
-	<link rel="stylesheet" type="text/css" href="~/Customer/Login/css/main.css">
-	<!--===============================================================================================-->
-	<section>
+                                <form class="login100-form validate-form" id="account" method="post">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
 
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="~/img/FranshyLogo2.jpg" alt="Franshy Logo" width="500" height="300">
-				</div>
+                                    <div class="mb-4">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                            <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                                <input asp-for="Input.Email" class="form-control" autocomplete="Name" aria-required="true" placeholder="Email" />
+                                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
 
-				<form class="login100-form validate-form" id="account" method="post">
-					<span class="login100-form-title">
-						Member Login
-					</span>
+                                    <div class="mb-4">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                            <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Password" />
+                                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
 
-					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-						<input class="input100"  asp-for="Input.Email" placeholder="Email">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
+                                    <div class="checkbox mb-3">
+                                        <label asp-for="Input.RememberMe" class="form-label">
+                                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                        </label>
+                                    </div>
 
-					</div>
-                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                    <div class="container-login100-form-btn">
+                                        <button type="submit" class="w-100 btn btn-lg btn-primary mt-4">Log in</button>
+                                    </div>
+                                </form>
 
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" asp-for="Input.Password" placeholder="Password">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                    <div class="checkbox mb-3">
-                        <label asp-for="Input.RememberMe" class="form-label">
-                            <input class="form-check-input" asp-for="Input.RememberMe" />
-                            @Html.DisplayNameFor(m => m.Input.RememberMe)
-                        </label>
-                    </div>
-					<div class="container-login100-form-btn">
-                        <button type="submit" id="login-submit" class="login100-form-btn">
-							Login
-						</button>
+                                <div class="text-center mt-6" style="margin-top:15px;padding: 20px;">
 
+                                    <span class="text-dark" style="font-weight: bold;">Or Login with</span> <!-- Bold text -->
 
-					</div>
-
-					<div class="text-center p-t-12">
-						<a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-					</div>
-
-					<div class="text-center p-t-12">
-							<a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Create your account</a>
-					</div>
-				</form>
-                <div class="external-login">
-                <div class="external-login-title">Or login with</div>
-                    @{
-                        if (!((Model.ExternalLogins?.Count ?? 0) == 0))
-                        {
-                            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                                <div>
-                                    <p>
-                                        @foreach (var provider in Model.ExternalLogins!)
-                                        {
-                                            <button type="submit" class="external-login-button" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                        }
-                                    </p>
                                 </div>
-                            </form>
-                        }
-                        }
 
+
+                                <div class="external-login mt-6 text-center">
+                                    <div class="external-login-title">Login with</div>
+                                    @if (!((Model.ExternalLogins?.Count ?? 0) == 0))
+                                    {
+                                        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                                            <button type="submit" name="provider" value="Google" title="Log in using your Google account" class="btn" style="background-color: #db4437; color: white; padding: 15px 30px; font-size: 1.25rem;">
+                                                <i class="fab fa-google fa-lg me-2"></i> Google
+                                            </button>
+                                            <button type="submit" name="provider" value="Facebook" title="Log in using your Facebook account" class="btn" style="background-color: #165EAB; color: white; padding: 15px 30px; font-size: 1.25rem;">
+                                                <i class="fab fa-facebook fa-lg me-2"></i> Facebook
+                                            </button>
+                                        </form>
+                                    }
+                                    <div class="text-center p-t-12 mt-3 d-flex justify-content-center align-items-center">
+                                        <p class="text-dark m-0">Not a member?&nbsp;</p>
+                                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="ml-2"> Sign up now</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                <img src="~/img/FranshyLogo2.jpg" class="img-fluid" alt="Sample image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-			</div>
-
-		</div>
-
-	</div>
-
+        </div>
+    </div>
 </section>
+
 @section Scripts {
-		<partial name="_ValidationScriptsPartial" />
-		<!--===============================================================================================-->
-		<script src="~/Customer/Login/vendor/jquery/jquery-3.2.1.min.js"></script>
-		<!--===============================================================================================-->
-		<script src="~/Customer/Login/vendor/bootstrap/js/popper.js"></script>
-		<script src="~/Customer/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<!--===============================================================================================-->
-		<script src="~/Customer/Login/vendor/select2/select2.min.js"></script>
-		<!--===============================================================================================-->
-		<script src="~/Customer/Login/vendor/tilt/tilt.jquery.min.js"></script>
-		<script>
-			$('.js-tilt').tilt({
-				scale: 1.1
-			})
-		</script>
-		<!--===============================================================================================-->
-		<script src="js/main.js"></script>
-    <script>
-        document.getElementById('google-login').addEventListener('click', function () {
-            window.location.href = '/Account/GoogleLogin';
-        });
-
-        document.getElementById('facebook-login').addEventListener('click', function () {
-            window.location.href = '/Account/FacebookLogin';
-        });
-
-        document.getElementById('twitter-login').addEventListener('click', function () {
-            window.location.href = '/Account/TwitterLogin';
-        });</script>
+    <partial name="_ValidationScriptsPartial" />
 }

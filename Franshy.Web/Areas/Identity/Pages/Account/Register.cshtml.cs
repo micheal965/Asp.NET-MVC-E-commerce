@@ -110,11 +110,7 @@ namespace Franshy.Web.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
-            if (!_rolemanager.RoleExistsAsync(Roles.AdminRole).GetAwaiter().GetResult())
-            {
-                _rolemanager.CreateAsync(new IdentityRole(Roles.AdminRole)).GetAwaiter().GetResult();
-                _rolemanager.CreateAsync(new IdentityRole(Roles.CustomerRole)).GetAwaiter().GetResult();
-            }
+
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }

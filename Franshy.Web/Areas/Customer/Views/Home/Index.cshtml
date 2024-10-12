@@ -1,4 +1,7 @@
 ﻿@model IEnumerable<Product>
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+
 <link href="~/ShoppingCart/Home.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Include SweetAlert -->
 
@@ -39,6 +42,16 @@
                 </div>
             }
         </div>
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            
+            @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page = page }),new PagedListRenderOptions
+            {
+            LiElementClasses=new string[]{"page-item"},
+            PageClasses=new string[]{"page-link"}
+            })
+         </div>
+        </div>
     </div>
 </section>
 
@@ -68,4 +81,3 @@
         }
     }
 </script>
-
