@@ -9,6 +9,6 @@ namespace Franshy.DataAccess.Repository.Interfaces
 {
     public interface IUploadfile<T> where T : class
     {
-        Task<string> upload(T entity, IFormFile file, string foldername);
+        Task<string> upload(IFormFile file, string foldername);
     }
 }

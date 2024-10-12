@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Franshy.Utilities;
 using Franshy.Entities.ViewModels;
-using Franshy.DataAccess.Repository.Implementation;
 using Stripe;
-using Stripe.Climate;
+
 
 namespace Franshy.Web.Areas.Admin.Controllers
 {

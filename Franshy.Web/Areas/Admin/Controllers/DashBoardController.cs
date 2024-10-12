@@ -2,7 +2,6 @@
 using Franshy.DataAccess.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Franshy.Entities.ViewModels;
-using Franshy.DataAccess.Repository.Implementation;
 using Microsoft.AspNetCore.Authorization;
 using Franshy.Utilities;
 

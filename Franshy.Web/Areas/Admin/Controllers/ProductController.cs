@@ -73,7 +73,7 @@ namespace Franshy.Web.Areas.Admin.Controllers
                 try
                 {
                     Uploadfile<Product> uploadfile = new Uploadfile<Product>(webHostEnvironment);
-                    productVm.product.ImgUrl = await uploadfile.upload(productVm.product, file, "Product");
+                    productVm.product.ImgUrl = await uploadfile.upload(file, "Product");
                     await _unitofwork.Product.AddAsync(productVm.product);
                     await _unitofwork.complete();
                     TempData["Create"] = "Product has been Added successfully";
@@ -121,7 +121,7 @@ namespace Franshy.Web.Areas.Admin.Controllers
                         {
                             System.IO.File.Delete(oldimg);
                         }
-                        productVm.product.ImgUrl = await uploadfile.upload(productVm.product, file, "Product");
+                        productVm.product.ImgUrl = await uploadfile.upload(file, "Product");
                     }
 
                     await _unitofwork.Product.Update(productVm.product);

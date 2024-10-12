@@ -12,7 +12,7 @@ namespace Franshy.Web
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +24,6 @@ namespace Franshy.Web
                 option.UseSqlServer(builder.Configuration.GetConnectionString("Constr"));
             });
             builder.Services.Configure<StripeData>(builder.Configuration.GetSection("stripe"));
-            builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequireUppercase = true;
@@ -80,11 +79,11 @@ namespace Franshy.Web
             app.UseRouting();
             StripeConfiguration.ApiKey = builder.Configuration.GetSection("stripe:Secretkey").Get<string>();
 
-            ////initialize Db
-            using (var scope = app.Services.CreateScope())
+            //initialize Db
+            using (var scope = app.Services.CreateAsyncScope())
             {
                 var dbinitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
-                dbinitializer.Initialize();
+                await dbinitializer.Initialize();
             }
             app.UseAuthentication();
             app.UseAuthorization();

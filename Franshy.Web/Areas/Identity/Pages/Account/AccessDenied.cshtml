@@ -3,8 +3,41 @@
 @{
     ViewData["Title"] = "Access denied";
 }
+    <div class="row2">
+        <div class="col-md-6">
+        <h1 class="text-danger">@ViewData["Title"]</h1>
+        <p class="text-danger">You do not have access to this resource.</p>
+    </div>
+</div>
+<style>
+    /* General styles */
+    body {
+        background-color: #e9ecef; /* Softer background for contrast */
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
 
-<header>
-    <h1 class="text-danger">@ViewData["Title"]</h1>
-    <p class="text-danger">You do not have access to this resource.</p>
-</header>
+
+    /* Form container */
+    .row2 {
+        display: flex;
+        justify-content: center;
+        margin-left:430px;
+        margin-top:50px;
+
+    }
+
+    /* Card styling */
+    .col-md-6 {
+        background-color: #ffffff; /* White background for the form */
+        border-radius: 12px; /* More pronounced rounded corners */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+        padding: 40px; /* Increased padding around the form */
+        margin-bottom: 200px;
+        margin-right: 130;
+        margin-top: 100px;
+        margin-right: 500px;
+    }
+
+
+
+</style>

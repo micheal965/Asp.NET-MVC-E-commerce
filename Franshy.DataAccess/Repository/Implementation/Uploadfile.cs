@@ -12,7 +12,7 @@ namespace Franshy.DataAccess.Repository.Implementation
         {
             this.webHostEnvironment = webHostEnvironment;
         }
-        public async Task<string> upload(T entity, IFormFile file, string foldername)
+        public async Task<string> upload(IFormFile file, string foldername)
         {
             var filename = Guid.NewGuid().ToString() + file.FileName;
             var folderpath = Path.Combine(webHostEnvironment.WebRootPath, "img", foldername);
